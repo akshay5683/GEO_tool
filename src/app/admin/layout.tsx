@@ -7,12 +7,11 @@ const nav = [
   { href: "/admin", label: "Overview" },
   { href: "/admin/users", label: "Users" },
   { href: "/admin/system", label: "System" },
-  { href: "/dashboard", label: "← Dashboard" },
 ];
 
 export default function AdminLayout({ children }: LayoutProps<"/admin">) {
   return (
-    <AppShell title="Admin" nav={nav}>
+    <AppShell title="Admin" nav={nav} variant="admin">
       {children}
     </AppShell>
   );
